@@ -76,17 +76,58 @@ export function Main() {
   return (
     <main>
       <section id="services">
-        <header>
-          <h1>NÚCLEO ODONTOLÓGICO VENEZA</h1>
-          <p id="services-highlight">
-            Tratamentos odontológicos que oferecemos
-          </p>
-          <p id="services-text">
-            Da triagem até o resultado final, trabalhamos com alta gama de
-            tratamentos odontológicos, exames digitais e planejamentos gerais.
-          </p>
-        </header>
-        <ul className="services-list">{renderServicesList}</ul>
+        <div className="content">
+          <header>
+            <h2>NÚCLEO ODONTOLÓGICO VENEZA</h2>
+            <p className="highlight">
+              Tratamentos odontológicos que oferecemos
+            </p>
+            <p className="text">
+              Da triagem até o resultado final, trabalhamos com alta gama de
+              tratamentos odontológicos, exames digitais e planejamentos gerais.
+            </p>
+          </header>
+          <ul className="services-list">{renderServicesList}</ul>
+        </div>
+      </section>
+      <section id="location-contact">
+        <div className="content">
+          <header>
+            <h2>NÚCLEO ODONTOLÓGICO VENEZA</h2>
+            <p className="highlight">Localicação e contato</p>
+            <p className="text">
+              Entre em contato com a gente via WhatsApp, e-mail ou faça-nos uma
+              visita.
+            </p>
+          </header>
+          <div id="contact">
+            <a href="https://wa.me/+553186613230" target="_blank">
+              <img src="../../../public/whatsapp.svg" alt="WhatsApp" /> Chamar
+              no WhatApp
+            </a>
+            <a href="mailto:nove.veneza@gmail.com">
+              <img src="../../../public/mail.svg" alt="Mail" /> Enviar e-mail
+            </a>
+          </div>
+          <div id="location">
+            <div id="address">
+              <img src="../../../public/location.svg" alt="Location" />
+              <p>
+                Rua Helena Sapori Faluba, 553 - Veneza, Ribeirão das Neves - MG,
+                33820170
+              </p>
+            </div>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3754.7018544056823!2d-44.13478242477697!3d-19.767817881584506!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xa6f287b7272271%3A0x382fdd7567c0c68a!2sR.%20Helena%20Sapori%20Faluba%2C%20553%20-%20Veneza%2C%20Ribeir%C3%A3o%20das%20Neves%20-%20MG%2C%2033820-170!5e0!3m2!1spt-BR!2sbr!4v1699739321458!5m2!1spt-BR!2sbr"
+              width="260"
+              height="300"
+              style={{ border: 0 }}
+              allowFullScreen={true}
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+        </div>
       </section>
     </main>
   )

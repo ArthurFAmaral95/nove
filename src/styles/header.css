@@ -1,4 +1,8 @@
-header {
+#header {
+  background-color: var(--light-green);
+}
+
+#header .content {
   display: flex;
   justify-content: space-between;
 

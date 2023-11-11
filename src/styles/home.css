@@ -20,18 +20,8 @@ body {
   font-family: 'Roboto', sans-serif;
 }
 
-body::before {
-  position: absolute;
-  content: '';
-  z-index: -1;
-
-  height: 7.7rem;
+.content {
   width: 100%;
-
-  background-color: var(--light-green);
-}
-
-.container {
   max-width: 87rem;
   margin-inline: auto;
 }
