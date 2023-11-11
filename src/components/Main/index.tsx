@@ -103,7 +103,7 @@ export function Main() {
           <div id="contact">
             <a href="https://wa.me/+553186613230" target="_blank">
               <img src="../../../public/whatsapp.svg" alt="WhatsApp" /> Chamar
-              no WhatApp
+              no WhatsApp
             </a>
             <a href="mailto:nove.veneza@gmail.com">
               <img src="../../../public/mail.svg" alt="Mail" /> Enviar e-mail
