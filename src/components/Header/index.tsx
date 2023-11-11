@@ -4,15 +4,11 @@ export function Header() {
   return (
     <header id="header">
       <div className="content">
-        <img
-          src="../../../public/logo.png"
-          alt="Núcleo Odontológico Veneza"
-          id="logo"
-        />
+        <img src="./logo.png" alt="Núcleo Odontológico Veneza" id="logo" />
         <div className="icons">
-          <img src="../../../public/menu.svg" alt="menu" id="menu-icon" />
+          <img src="./menu.svg" alt="menu" id="menu-icon" />
           <img
-            src="../../../public/close.svg"
+            src="./close.svg"
             alt="close"
             id="close-icon"
             className="hidden"

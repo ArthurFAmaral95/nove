@@ -9,54 +9,54 @@ export function Main() {
       service: 'Ortodontia',
       description:
         'Tratamentos completos, como aparelhos auto ligáveis, fixos, estéticos e alinhadores.',
-      img_path: '../../../public/ortodontia.svg'
+      img_path: './ortodontia.svg'
     },
     {
       service: 'Estética dental',
       description: 'Tratamentos restauradores com porcelanas e resinas.',
-      img_path: '../../../public/estetica.svg'
+      img_path: './estetica.svg'
     },
     {
       service: 'Implantodontia',
       description:
         'Reponha a perda parcial ou total dos dentes, restituindo função, estética e saúde do seu sorriso.',
-      img_path: '../../../public/implantodontia.svg'
+      img_path: './implantodontia.svg'
     },
     {
       service: 'Prótese',
       description:
         'Uma ótima alternativa para quem deseja repor um ou mais dentes que foram perdidos.',
-      img_path: '../../../public/protese.svg'
+      img_path: './protese.svg'
     },
     {
       service: 'Endodontia',
       description:
         'Ou tratamento de canal, a endodontia é a especialidade que cuida da parte interna do dente.',
-      img_path: '../../../public/endodontia.svg'
+      img_path: './endodontia.svg'
     },
     {
       service: 'Periodontia',
       description:
         'Prevenção da saúde bucal e tratamento de doenças gengivais, como gengivite e periodontite.',
-      img_path: '../../../public/periodontia.svg'
+      img_path: './periodontia.svg'
     },
     {
       service: 'Cirurgia',
       description:
         'Diagnóstico, tratamento e acompanhamento de dentes indicados para extração, por exemplo no caso de dentes sisos.',
-      img_path: '../../../public/cirurgia.svg'
+      img_path: './cirurgia.svg'
     },
     {
       service: 'Odontopediatria',
       description:
         'Cuida da saúde bucal de crianças, desde o nascimento até a adolescência.',
-      img_path: '../../../public/odontopediatria.svg'
+      img_path: './odontopediatria.svg'
     },
     {
       service: 'Exames Radiográficos',
       description:
         'Atendimentos focados na saúde bucal e individual de cada paciente.',
-      img_path: '../../../public/exames.svg'
+      img_path: './exames.svg'
     }
   ]
 
@@ -102,16 +102,15 @@ export function Main() {
           </header>
           <div id="contact">
             <a href="https://wa.me/+553186613230" target="_blank">
-              <img src="../../../public/whatsapp.svg" alt="WhatsApp" /> Chamar
-              no WhatsApp
+              <img src="./whatsapp.svg" alt="WhatsApp" /> Chamar no WhatsApp
             </a>
             <a href="mailto:nove.veneza@gmail.com">
-              <img src="../../../public/mail.svg" alt="Mail" /> Enviar e-mail
+              <img src="./mail.svg" alt="Mail" /> Enviar e-mail
             </a>
           </div>
           <div id="location">
             <div id="address">
-              <img src="../../../public/location.svg" alt="Location" />
+              <img src="./location.svg" alt="Location" />
               <p>
                 Rua Helena Sapori Faluba, 553 - Veneza, Ribeirão das Neves - MG,
                 33820170
