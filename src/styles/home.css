@@ -1,0 +1,34 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 62.5%;
+
+  --light-green: #f0fcea;
+  --green: #ddf1d3;
+  --dark-green: #648d51;
+}
+
+body {
+  width: 100%;
+}
+
+body::before {
+  position: absolute;
+  content: '';
+  z-index: -1;
+
+  height: 7.7rem;
+  width: 100%;
+
+
+  background-color: var(--light-green);
+}
+
+.container {
+  max-width: 87rem;
+  margin-inline: auto;
+}

@@ -1,0 +1,24 @@
+header {
+  display: flex;
+  justify-content: space-between;
+
+  align-items: center;
+
+  padding-inline: 1rem;
+}
+
+
+
+#logo {
+  width: 11rem;
+}
+
+#menu-icon,
+#close-icon {
+  width: 3.3rem;
+}
+
+#menu-icon.hidden,
+#close-icon.hidden {
+  display: none;
+}
