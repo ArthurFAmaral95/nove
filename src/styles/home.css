@@ -9,11 +9,15 @@
 
   --light-green: #f0fcea;
   --green: #ddf1d3;
-  --dark-green: #648d51;
+  --dark-green: #335424;
+  --title-color: #8ab675;
+  --text-color: #6b6b6b;
 }
 
 body {
   width: 100%;
+
+  font-family: 'Roboto', sans-serif;
 }
 
 body::before {
@@ -23,7 +27,6 @@ body::before {
 
   height: 7.7rem;
   width: 100%;
-
 
   background-color: var(--light-green);
 }

@@ -1,0 +1,39 @@
+.service {
+  display: grid;
+  grid-template-columns: 8rem 1fr;
+
+  margin: 1.6rem;
+
+  align-items: center;
+}
+
+.service .service-icon {
+  height: 8rem;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color: var(--light-green);
+  border-radius: 50%;
+}
+
+.service .service-info {
+  margin-left: 1rem;
+}
+
+.service .service-info .service-name {
+  font-size: 1.8rem;
+  font-weight: 500;
+  color: var(--dark-green);
+  line-height: 3rem;
+}
+
+.service .service-info .service-description {
+  font-size: 1.4rem;
+
+  color: var(--text-color);
+
+  text-align: left;
+  line-height: 2rem;
+}
