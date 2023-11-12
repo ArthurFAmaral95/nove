@@ -100,7 +100,7 @@ export function Main() {
               visita.
             </p>
           </header>
-          <div id="contact">
+          <div className="contact">
             <a href="https://wa.me/+553186613230" target="_blank">
               <img src="./whatsapp.svg" alt="WhatsApp" /> Chamar no WhatsApp
             </a>

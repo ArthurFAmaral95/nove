@@ -25,3 +25,8 @@ body {
   max-width: 87rem;
   margin-inline: auto;
 }
+
+.container.menu-expanded {
+  height: 100vh;
+  overflow: hidden;
+}
