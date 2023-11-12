@@ -15,7 +15,9 @@ nav {
   gap: 4.8rem;
 
   margin-top: 6rem;
+}
 
+.container.menu-expanded nav {
   transform: translateY(0);
   opacity: 1;
   visibility: visible;
@@ -42,10 +44,38 @@ nav ul li a {
   color: var(--dark-green);
 }
 
-nav.hidden {
+nav {
   transform: translateY(100%);
   opacity: 0;
   visibility: hidden;
+}
 
-  transition: all 0.5s;
+@media (min-width: 871px) {
+  nav {
+    position: initial;
+    transform: translateY(0);
+    opacity: 1;
+    visibility: visible;
+
+    width: 100%;
+    max-width: 80%;
+    height: initial;
+
+    background-color: transparent;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    justify-self: right;
+
+    gap: 1rem;
+
+    margin-top: 0;
+  }
+
+  nav ul {
+    flex-direction: row;
+    gap: 3rem;
+  }
 }

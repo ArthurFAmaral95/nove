@@ -6,7 +6,7 @@ type Nav = MenuOpen & HandleMenu
 
 export function Nav(props: Nav) {
   return (
-    <nav className={props.menuOpen ? '' : 'hidden'}>
+    <nav>
       <ul>
         <li
           onClick={() => {
