@@ -16,6 +16,12 @@ nav {
 
   margin-top: 6rem;
 
+  transform: translateY(100%);
+  opacity: 0;
+  visibility: hidden;
+}
+
+.container.menu-expanded nav {
   transform: translateY(0);
   opacity: 1;
   visibility: visible;
@@ -36,16 +42,59 @@ nav ul {
   line-height: 3.1rem;
 }
 
+nav ul li {
+  display: flex;
+  flex-direction: column;
+}
+
+nav ul li span {
+  height: 0.1rem;
+  width: 0;
+
+  transition: all 0.3s;
+}
+
+nav ul li:hover span {
+  width: 100%;
+  background-color: var(--dark-green);
+
+  transition: all 0.3s;
+}
+
 nav ul li a {
   text-decoration: none;
 
   color: var(--dark-green);
 }
 
-nav.hidden {
-  transform: translateY(100%);
-  opacity: 0;
-  visibility: hidden;
+@media (min-width: 871px) {
+  nav {
+    position: initial;
+    transform: translateY(0);
+    opacity: 1;
+    visibility: visible;
 
-  transition: all 0.5s;
+    width: 100%;
+    max-width: 80%;
+    height: initial;
+
+    background-color: transparent;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    justify-self: right;
+
+    gap: 1rem;
+
+    margin-top: 0;
+  }
+
+  nav ul {
+    flex-direction: row;
+    gap: 3rem;
+
+    font-weight: 300;
+  }
 }

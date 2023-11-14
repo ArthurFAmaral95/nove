@@ -22,7 +22,16 @@ export function Footer() {
             (31)8681-3230
           </span>
         </div>
-        <img src="./logo.png" alt="Núcleo Odontológico Veneza" id="logo" />
+        <div className="images">
+          <img
+            src="./logo.png"
+            alt="Núcleo Odontológico Veneza"
+            className="logo"
+          />
+          <a href="https://qualidadeemsaude.com.br/" target="_blank">
+            <img src="./QS-logo-preta.png" alt="Logo QS" className="logo" />
+          </a>
+        </div>
       </div>
     </footer>
   )

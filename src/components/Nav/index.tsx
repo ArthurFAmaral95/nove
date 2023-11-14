@@ -6,7 +6,7 @@ type Nav = MenuOpen & HandleMenu
 
 export function Nav(props: Nav) {
   return (
-    <nav className={props.menuOpen ? '' : 'hidden'}>
+    <nav>
       <ul>
         <li
           onClick={() => {
@@ -14,6 +14,7 @@ export function Nav(props: Nav) {
           }}
         >
           <a href="#services">Serviços</a>
+          <span></span>
         </li>
         <li
           onClick={() => {
@@ -21,6 +22,7 @@ export function Nav(props: Nav) {
           }}
         >
           <a href="#location-contact">Localização e Contato</a>
+          <span></span>
         </li>
       </ul>
       <div className="contact">

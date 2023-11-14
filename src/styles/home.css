@@ -30,3 +30,9 @@ body {
   height: 100vh;
   overflow: hidden;
 }
+
+@media (min-width: 871px) {
+  .content {
+    max-width: 144rem;
+  }
+}
