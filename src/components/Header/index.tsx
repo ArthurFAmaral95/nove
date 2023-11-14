@@ -9,7 +9,11 @@ export function Header(props: Header) {
   return (
     <header id="header">
       <div className="content">
-        <img src="./logo.png" alt="Núcleo Odontológico Veneza" id="logo" />
+        <img
+          src="./logo.png"
+          alt="Núcleo Odontológico Veneza"
+          className="logo"
+        />
         <Nav menuOpen={props.menuOpen} handleMenu={props.handleMenu} />
         <div className="icons">
           <img
