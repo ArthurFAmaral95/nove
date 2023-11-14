@@ -66,7 +66,7 @@ nav {
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: space-between;
     justify-self: right;
 
     gap: 1rem;
@@ -77,5 +77,7 @@ nav {
   nav ul {
     flex-direction: row;
     gap: 3rem;
+
+    font-weight: 300;
   }
 }

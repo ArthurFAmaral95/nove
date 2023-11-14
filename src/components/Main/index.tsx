@@ -108,7 +108,7 @@ export function Main() {
               <img src="./mail.svg" alt="Mail" /> Enviar e-mail
             </a>
           </div>
-          <div id="location">
+          <div className="location">
             <div id="address">
               <img src="./location.svg" alt="Location" />
               <p>
