@@ -115,3 +115,10 @@ section header .text {
 
   margin-bottom: 2rem;
 }
+
+@media (min-width: 871px) {
+  .services-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}

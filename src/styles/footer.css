@@ -31,3 +31,8 @@ footer .content .info span {
   color: #335424;
   font-size: 1.5rem;
 }
+
+footer .content .images {
+  display: flex;
+  flex-direction: column;
+}
