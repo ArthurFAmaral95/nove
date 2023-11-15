@@ -92,7 +92,6 @@ section header .text {
 
 .services-list,
 .team-members {
-  padding: 1rem;
   margin-top: 6rem;
 
   display: flex;
@@ -100,6 +99,7 @@ section header .text {
 
   list-style: none;
   width: 100%;
+  gap: 1rem;
 }
 
 #location-contact {
