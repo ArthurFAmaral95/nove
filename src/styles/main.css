@@ -24,7 +24,7 @@ section header h2 {
 
 section header .highlight {
   font-size: 3.4rem;
-  line-height: 3rem;
+  line-height: 130%;
   color: var(--dark-green);
   text-align: center;
 }
@@ -32,7 +32,7 @@ section header .highlight {
 section header .text {
   font-size: 1.8rem;
   font-weight: 400;
-  line-height: 2rem;
+  line-height: 150%;
   color: var(--text-color);
   text-align: center;
   margin-bottom: 2rem;
@@ -41,6 +41,15 @@ section header .text {
 #home img {
   width: 26.4rem;
   max-width: 100%;
+}
+
+#home header .contact a {
+  margin-bottom: 2rem;
+}
+
+#home header .contact a img {
+  width: 2.4rem;
+  margin-inline: 0;
 }
 
 #home .stats {
@@ -161,6 +170,55 @@ section header .text {
 }
 
 @media (min-width: 871px) {
+  #home .content {
+    display: grid;
+    grid-template-areas:
+      'leftSide rightSide'
+      'bottomSide bottomSide';
+
+    grid-template-columns: 60% 40%;
+  }
+
+  #home .content header {
+    grid-area: leftSide;
+
+    align-items: baseline;
+  }
+
+  #home .content header .highlight,
+  #home .content header .text {
+    text-align: left;
+
+    width: 90%;
+  }
+
+  #home .content header .highlight {
+    font-size: 5.2rem;
+  }
+
+  #home .content img {
+    grid-area: rightSide;
+
+    width: 42rem;
+
+    margin-inline: auto;
+  }
+
+  #home .content .stats {
+    grid-area: bottomSide;
+
+    flex-direction: row;
+    gap: 0;
+  }
+
+  #home .content .stats .stat {
+    width: 33%;
+  }
+
+  #home .content .stats .stat:nth-child(-n + 2) {
+    border-right: 1px solid var(--dark-green);
+  }
+
   .services-list {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -172,9 +230,7 @@ section header .text {
       'header location'
       'contact location';
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 20% 80%;
-
-    padding-top: 2rem;
+    grid-template-rows: 30% 70%;
   }
 
   #location-contact .content header {
@@ -187,7 +243,7 @@ section header .text {
     align-items: center;
     align-self: baseline;
 
-    padding-top: 5rem;
+    margin-top: 2rem;
   }
 
   #location-contact .content .location {

@@ -86,6 +86,11 @@ export function Main() {
               Da triagem até o resultado final, trabalhamos com alta gama de
               tratamentos odontológicos, exames digitais e planejamentos gerais.
             </p>
+            <div className="contact">
+              <a href="https://wa.me/+553186613230" target="_blank">
+                <img src="./whatsapp.svg" alt="WhatsApp" /> Agende sua consulta
+              </a>
+            </div>
           </header>
           <img src="./mulherSorrindo.png" alt="Mulher sorrindo" />
 
