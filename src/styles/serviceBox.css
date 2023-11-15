@@ -2,8 +2,6 @@
   display: grid;
   grid-template-columns: 8rem 1fr;
 
-  margin: 1.6rem;
-
   align-items: center;
 
   background-color: white;
