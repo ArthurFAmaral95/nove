@@ -1,8 +1,9 @@
 import '../../styles/main.css'
 
-import { Service } from '../../types/types'
+import { Service, TeamMemberProps } from '../../types/types'
 import { SectionHeader } from '../SectionHeader'
 import { ServiceBox } from '../ServiceBox'
+import { TeamMemberBox } from '../TeamMemberBox'
 import { WhappBtn } from '../WhappBtn'
 
 export function Main() {
@@ -62,9 +63,35 @@ export function Main() {
     }
   ]
 
-  // const teamMembers: TeamMemberProps[] = []
+  const teamMembers: TeamMemberProps[] = [
+    {
+      name: 'Davidson Fernandes',
+      role: 'Dentista',
+      img_path: './teamMembersImgs/davidson.jpeg',
+      expertises: ['Especialidade 1', 'Especialidade 2', 'Especialidade 3']
+    },
+    {
+      name: 'Davidson Fernandes',
+      role: 'Dentista',
+      img_path: './teamMembersImgs/davidson.jpeg',
+      expertises: ['Especialidade 1', 'Especialidade 2', 'Especialidade 3']
+    },
+    {
+      name: 'Davidson Fernandes',
+      role: 'Dentista',
+      img_path: './teamMembersImgs/davidson.jpeg',
+      expertises: ['Especialidade 1', 'Especialidade 2', 'Especialidade 3']
+    },
+    {
+      name: 'Davidson Fernandes',
+      role: 'Dentista',
+      img_path: './teamMembersImgs/davidson.jpeg',
+      expertises: ['Especialidade 1', 'Especialidade 2', 'Especialidade 3']
+    }
+  ]
 
   const renderServicesList: any = []
+  const renderTeamMembers: any = []
 
   services.map(service => {
     renderServicesList.push(
@@ -73,6 +100,18 @@ export function Main() {
         description={service.description}
         img_path={service.img_path}
         key={service.service}
+      />
+    )
+  })
+
+  teamMembers.map(member => {
+    renderTeamMembers.push(
+      <TeamMemberBox
+        name={member.name}
+        role={member.role}
+        img_path={member.img_path}
+        expertises={member.expertises}
+        key={member.name}
       />
     )
   })
@@ -130,7 +169,7 @@ export function Main() {
               text="Algum texto sobre a equipe"
             />
           </header>
-          <ul className="team-members"></ul>
+          <ul className="team-members">{renderTeamMembers}</ul>
         </div>
       </section>
       <section id="location-contact">

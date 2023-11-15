@@ -91,7 +91,8 @@ section header .text {
   background-color: var(--services-bg);
 }
 
-.services-list {
+.services-list,
+.team-members {
   padding: 1rem;
   margin-top: 6rem;
 

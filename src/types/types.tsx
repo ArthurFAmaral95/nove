@@ -23,5 +23,5 @@ export type TeamMemberProps = {
   name: string
   role: string
   img_path: string
-  expertise: string[]
+  expertises: string[]
 }
