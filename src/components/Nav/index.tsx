@@ -8,6 +8,7 @@ export function Nav() {
       <ul>
         <NavItem href="#home" text="Início" />
         <NavItem href="#services" text="Serviços" />
+        <NavItem href="#team" text="Equipe" />
         <NavItem href="#location-contact" text="Localização e Contato" />
       </ul>
       <div className="contact">

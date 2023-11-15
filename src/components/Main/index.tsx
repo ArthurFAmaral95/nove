@@ -11,56 +11,58 @@ export function Main() {
       service: 'Ortodontia',
       description:
         'Tratamentos completos, como aparelhos auto ligáveis, fixos, estéticos e alinhadores.',
-      img_path: './ortodontia.svg'
+      img_path: './servicesImgs/ortodontia.svg'
     },
     {
       service: 'Estética dental',
       description: 'Tratamentos restauradores com porcelanas e resinas.',
-      img_path: './estetica.svg'
+      img_path: './servicesImgs/estetica.svg'
     },
     {
       service: 'Implantodontia',
       description:
         'Reponha a perda parcial ou total dos dentes, restituindo função, estética e saúde do seu sorriso.',
-      img_path: './implantodontia.svg'
+      img_path: './servicesImgs/implantodontia.svg'
     },
     {
       service: 'Prótese',
       description:
         'Uma ótima alternativa para quem deseja repor um ou mais dentes que foram perdidos.',
-      img_path: './protese.svg'
+      img_path: './servicesImgs/protese.svg'
     },
     {
       service: 'Endodontia',
       description:
         'Ou tratamento de canal, a endodontia é a especialidade que cuida da parte interna do dente.',
-      img_path: './endodontia.svg'
+      img_path: './servicesImgs/endodontia.svg'
     },
     {
       service: 'Periodontia',
       description:
         'Prevenção da saúde bucal e tratamento de doenças gengivais, como gengivite e periodontite.',
-      img_path: './periodontia.svg'
+      img_path: './servicesImgs/periodontia.svg'
     },
     {
       service: 'Cirurgia',
       description:
         'Diagnóstico, tratamento e acompanhamento de dentes indicados para extração, por exemplo no caso de dentes sisos.',
-      img_path: './cirurgia.svg'
+      img_path: './servicesImgs/cirurgia.svg'
     },
     {
       service: 'Odontopediatria',
       description:
         'Cuida da saúde bucal de crianças, desde o nascimento até a adolescência.',
-      img_path: './odontopediatria.svg'
+      img_path: './servicesImgs/odontopediatria.svg'
     },
     {
       service: 'Exames Radiográficos',
       description:
         'Atendimentos focados na saúde bucal e individual de cada paciente.',
-      img_path: './exames.svg'
+      img_path: './servicesImgs/exames.svg'
     }
   ]
+
+  // const teamMembers: TeamMemberProps[] = []
 
   const renderServicesList: any = []
 
@@ -117,6 +119,18 @@ export function Main() {
             />
           </header>
           <ul className="services-list">{renderServicesList}</ul>
+        </div>
+      </section>
+      <section id="team">
+        <div className="content">
+          <header>
+            <SectionHeader
+              h2Text="Equipe"
+              highlight="Conheça nossa equipe"
+              text="Algum texto sobre a equipe"
+            />
+          </header>
+          <ul className="team-members"></ul>
         </div>
       </section>
       <section id="location-contact">

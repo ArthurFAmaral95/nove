@@ -18,3 +18,10 @@ export type SectionHeaderProps = {
   highlight: string
   text: string
 }
+
+export type TeamMemberProps = {
+  name: string
+  role: string
+  img_path: string
+  expertise: string[]
+}
