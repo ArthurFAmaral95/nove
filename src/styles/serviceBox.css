@@ -10,8 +10,8 @@
 
   padding: 2.4rem;
 
-  border-radius: 0.6rem;
-  border: 0.1rem solid var(--light-green);
+  border-radius: 1rem;
+  border: 0.3rem solid var(--light-green);
   cursor: pointer;
 }
 

@@ -26,6 +26,8 @@ export function ServiceDetails(props: ServiceDetailsProps) {
         <div className="service-imgs">
           <img src="./teamMembersImgs/davidson.jpeg" alt="Servide image" />
           <img src="./teamMembersImgs/davidson.jpeg" alt="Service image" />
+          <img src="./teamMembersImgs/davidson.jpeg" alt="Servide image" />
+          <img src="./teamMembersImgs/davidson.jpeg" alt="Service image" />
         </div>
         <section className="service-details-text">
           <p>

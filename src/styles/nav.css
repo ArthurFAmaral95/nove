@@ -68,6 +68,10 @@ nav ul li a {
   color: var(--dark-green);
 }
 
+nav .contact {
+  margin-top: 0;
+}
+
 @media (min-width: 871px) {
   nav {
     position: initial;
@@ -97,5 +101,9 @@ nav ul li a {
     gap: 3rem;
 
     font-weight: 300;
+  }
+
+  nav .contact a:hover {
+    border: 1px solid var(--dark-green);
   }
 }

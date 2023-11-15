@@ -1,9 +1,10 @@
 .team-member {
-  background-color: var(--services-bg);
+  background-color: var(--stats-bg);
 
   margin: 1.6rem;
   padding: 2.4rem;
-  border-radius: 0.6rem;
+  border-radius: 1rem;
+  border: 0.3rem solid var(--light-green);
 
   display: flex;
   flex-direction: column;

@@ -147,15 +147,15 @@ export function Main() {
           <img src="./mulherSorrindo.png" alt="Mulher sorrindo" />
           <div className="stats">
             <div className="stat">
-              <h3>+2000</h3>
+              <h3>+5000</h3>
               <p>Pacientes atendidos</p>
             </div>
             <div className="stat">
-              <h3>5</h3>
-              <p>Especialistas disponíveis</p>
+              <h3>9</h3>
+              <p>Especialidades disponíveis</p>
             </div>
             <div className="stat">
-              <h3>+5</h3>
+              <h3>10</h3>
               <p>Anos no mercado</p>
             </div>
           </div>

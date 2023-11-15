@@ -1,5 +1,5 @@
 section .content {
-  padding: 14rem 1rem 2rem 1rem;
+  padding: 14rem 2rem 2rem 2rem;
 
   display: flex;
   flex-direction: column;
@@ -87,7 +87,7 @@ section header .text {
 }
 
 #services {
-  background-color: var(--services-bg);
+  background-color: var(--light-green);
 }
 
 .services-list,
