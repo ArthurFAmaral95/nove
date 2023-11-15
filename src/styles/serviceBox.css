@@ -5,6 +5,14 @@
   margin: 1.6rem;
 
   align-items: center;
+
+  background-color: white;
+
+  padding: 2.4rem;
+
+  border-radius: 0.6rem;
+  border: 0.1rem solid var(--light-green);
+  cursor: pointer;
 }
 
 .service .service-icon {

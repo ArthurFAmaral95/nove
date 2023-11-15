@@ -75,7 +75,7 @@ export function Main() {
 
   return (
     <main>
-      <section id="services">
+      <section id="home">
         <div className="content">
           <header>
             <h2>NÚCLEO ODONTOLÓGICO VENEZA</h2>
@@ -87,6 +87,32 @@ export function Main() {
               tratamentos odontológicos, exames digitais e planejamentos gerais.
             </p>
           </header>
+          <img src="./mulherSorrindo.png" alt="Mulher sorrindo" />
+
+          <div className="stats">
+            <div className="stat">
+              <h3>+2000</h3>
+              <p>Pacientes atendidos</p>
+            </div>
+            <div className="stat">
+              <h3>5</h3>
+              <p>Especialistas disponíveis</p>
+            </div>
+            <div className="stat">
+              <h3>+5</h3>
+              <p>Anos no mercado</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="services">
+        <div className="content">
+          <header>
+            <h2>Serviços</h2>
+            <p className="highlight">
+              Tratamentos odontológicos que oferecemos
+            </p>
+          </header>
           <ul className="services-list">{renderServicesList}</ul>
         </div>
       </section>
@@ -94,7 +120,7 @@ export function Main() {
         <div className="content">
           <header>
             <h2>NÚCLEO ODONTOLÓGICO VENEZA</h2>
-            <p className="highlight">Localicação e contato</p>
+            <p className="highlight">Localicação e Contato</p>
             <p className="text">
               Entre em contato com a gente via WhatsApp, e-mail ou faça-nos uma
               visita.

@@ -9,6 +9,14 @@ export function Nav() {
             document.body.classList.remove('menu-expanded')
           }}
         >
+          <a href="#home">Início</a>
+          <span></span>
+        </li>
+        <li
+          onClick={() => {
+            document.body.classList.remove('menu-expanded')
+          }}
+        >
           <a href="#services">Serviços</a>
           <span></span>
         </li>

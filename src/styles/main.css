@@ -1,5 +1,4 @@
-section {
-  margin-top: 3rem;
+section .content {
   padding: 14rem 1rem 2rem 1rem;
 
   display: flex;
@@ -10,13 +9,13 @@ section {
 section header {
   display: flex;
   flex-direction: column;
-  gap: 1rem;
+  gap: 1.5rem;
   align-items: center;
 }
 
 section header h2 {
-  font-size: 1.2rem;
-  font-weight: 500;
+  font-size: 1.4rem;
+  font-weight: 700;
   letter-spacing: 0.365em;
   line-height: 1.5rem;
   color: var(--title-color);
@@ -24,27 +23,67 @@ section header h2 {
 }
 
 section header .highlight {
-  font-size: 2.4rem;
+  font-size: 3.4rem;
   line-height: 3rem;
   color: var(--dark-green);
   text-align: center;
 }
 
 section header .text {
-  font-size: 1.4rem;
+  font-size: 1.8rem;
+  font-weight: 400;
   line-height: 2rem;
   color: var(--text-color);
   text-align: center;
   margin-bottom: 2rem;
 }
 
+#home img {
+  width: 26.4rem;
+  max-width: 100%;
+}
+
+#home .stats {
+  width: 100%;
+
+  background-color: var(--stats-bg);
+
+  padding-block: 4rem;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6rem;
+
+  border-radius: 0.6rem;
+}
+
+#home .stats .stat {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+#home .stats .stat h3 {
+  font-size: 4.8rem;
+
+  line-height: 130%;
+}
+
+#home .stats .stat p {
+  font-size: 1.6rem;
+  line-height: 150%;
+  color: var(--dark-green);
+}
+
 #services {
-  /* padding-top: 14rem; */
-  margin-top: 0;
+  background-color: var(--services-bg);
 }
 
 .services-list {
   padding: 1rem;
+  margin-top: 6rem;
 
   display: flex;
   flex-direction: column;
