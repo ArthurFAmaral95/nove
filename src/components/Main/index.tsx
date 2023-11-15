@@ -1,12 +1,16 @@
+import { useState } from 'react'
 import '../../styles/main.css'
 
 import { Service, TeamMemberProps } from '../../types/types'
 import { SectionHeader } from '../SectionHeader'
 import { ServiceBox } from '../ServiceBox'
+import { ServiceDetails } from '../ServiceDetails'
 import { TeamMemberBox } from '../TeamMemberBox'
 import { WhappBtn } from '../WhappBtn'
 
 export function Main() {
+  const [selectedService, setSelectedService] = useState('')
+
   const services: Service[] = [
     {
       service: 'Ortodontia',
@@ -100,6 +104,7 @@ export function Main() {
         description={service.description}
         img_path={service.img_path}
         key={service.service}
+        selectService={selectService}
       />
     )
   })
@@ -115,6 +120,14 @@ export function Main() {
       />
     )
   })
+
+  function selectService(service: string) {
+    setSelectedService(service)
+  }
+
+  function closeServiceDetails() {
+    setSelectedService('')
+  }
 
   return (
     <main>
@@ -148,6 +161,10 @@ export function Main() {
           </div>
         </div>
       </section>
+      <ServiceDetails
+        selectedService={selectedService}
+        closeServiceDetails={closeServiceDetails}
+      />
       <section id="services">
         <div className="content">
           <header>

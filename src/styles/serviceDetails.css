@@ -1,0 +1,60 @@
+.service-details {
+  position: sticky;
+
+  top: 12rem;
+
+  width: 80%;
+
+  margin-inline: auto;
+
+  overflow: scroll;
+}
+
+.service-details.hidden {
+  display: none;
+}
+
+.service-details .content {
+  background-color: var(--services-bg);
+
+  border: 1px solid var(--green);
+  border-radius: 0.6rem;
+
+  padding: 2.4rem;
+
+  height: 70vh;
+  overflow: scroll;
+}
+
+.service-details .content header {
+  display: flex;
+
+  align-items: center;
+  justify-content: space-between;
+}
+
+.service-details .content header h2 {
+  font-size: 1.8rem;
+  font-weight: 500;
+  color: var(--dark-green);
+}
+
+.service-details .content .service-imgs {
+  margin-block: 2rem;
+  display: flex;
+  align-items: center;
+  gap: 0.2rem;
+}
+
+.service-details .content .service-imgs img {
+  max-width: 50%;
+
+  border-radius: 1rem;
+}
+
+.service-details .content .service-details-text {
+  font-size: 1.4rem;
+  color: var(--text-color);
+  line-height: 2rem;
+  text-align: justify;
+}

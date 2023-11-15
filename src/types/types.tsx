@@ -4,6 +4,10 @@ export type Service = {
   img_path: string
 }
 
+export type SelectedServiceProps = {
+  selectedService: string
+}
+
 export type NavItemProps = {
   href: string
   text: string
@@ -24,4 +28,12 @@ export type TeamMemberProps = {
   role: string
   img_path: string
   expertises: string[]
+}
+
+export type SelectService = {
+  selectService: (service: string) => void
+}
+
+export type CloseServiceDetails = {
+  closeServiceDetails: () => void
 }
