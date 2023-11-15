@@ -12,3 +12,9 @@ export type NavItemProps = {
 export type WhappBtnProps = {
   text: string
 }
+
+export type SectionHeaderProps = {
+  h2Text: string
+  highlight: string
+  text: string
+}

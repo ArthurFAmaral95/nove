@@ -1,6 +1,7 @@
 import '../../styles/main.css'
 
 import { Service } from '../../types/types'
+import { SectionHeader } from '../SectionHeader'
 import { ServiceBox } from '../ServiceBox'
 import { WhappBtn } from '../WhappBtn'
 
@@ -79,20 +80,17 @@ export function Main() {
       <section id="home">
         <div className="content">
           <header>
-            <h2>NÚCLEO ODONTOLÓGICO VENEZA</h2>
-            <p className="highlight">
-              Tratamentos odontológicos que oferecemos
-            </p>
-            <p className="text">
-              Da triagem até o resultado final, trabalhamos com alta gama de
-              tratamentos odontológicos, exames digitais e planejamentos gerais.
-            </p>
+            <SectionHeader
+              h2Text="Núcleo Odontológico Veneza"
+              highlight="Tratamentos odontológicos que oferecemos"
+              text="Da triagem até o resultado final, trabalhamos com alta gama de
+              tratamentos odontológicos, exames digitais e planejamentos gerais."
+            />
             <div className="contact">
               <WhappBtn text="Agende sua consulta" />
             </div>
           </header>
           <img src="./mulherSorrindo.png" alt="Mulher sorrindo" />
-
           <div className="stats">
             <div className="stat">
               <h3>+2000</h3>
@@ -112,10 +110,11 @@ export function Main() {
       <section id="services">
         <div className="content">
           <header>
-            <h2>Serviços</h2>
-            <p className="highlight">
-              Tratamentos odontológicos que oferecemos
-            </p>
+            <SectionHeader
+              h2Text="Serviços"
+              highlight="Tratamentos odontológicos que oferecemos"
+              text=""
+            />
           </header>
           <ul className="services-list">{renderServicesList}</ul>
         </div>
@@ -123,12 +122,12 @@ export function Main() {
       <section id="location-contact">
         <div className="content">
           <header>
-            <h2>NÚCLEO ODONTOLÓGICO VENEZA</h2>
-            <p className="highlight">Localicação e Contato</p>
-            <p className="text">
-              Entre em contato com a gente via WhatsApp, e-mail ou faça-nos uma
-              visita.
-            </p>
+            <SectionHeader
+              h2Text="Núcleo Odontológico Veneza"
+              highlight="Localicação e Contato"
+              text="Entre em contato com a gente via WhatsApp, e-mail ou faça-nos uma
+              visita."
+            />
           </header>
           <div className="contact">
             <WhappBtn text="Chamar no WhatsApp" />
