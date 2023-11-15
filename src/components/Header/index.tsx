@@ -1,11 +1,7 @@
 import '../../styles/header.css'
 import { Nav } from '../Nav'
 
-import { HandleMenu, MenuOpen } from '../../types/types'
-
-type Header = MenuOpen & HandleMenu
-
-export function Header(props: Header) {
+export function Header() {
   return (
     <header id="header">
       <div className="content">
@@ -14,24 +10,22 @@ export function Header(props: Header) {
           alt="Núcleo Odontológico Veneza"
           className="logo"
         />
-        <Nav menuOpen={props.menuOpen} handleMenu={props.handleMenu} />
+        <Nav />
         <div className="icons">
           <img
             src="./menu.svg"
             alt="open menu"
             id="menu-icon"
-            className={props.menuOpen ? 'hidden' : ''}
             onClick={() => {
-              props.handleMenu(true)
+              document.body.classList.add('menu-expanded')
             }}
           />
           <img
             src="./close.svg"
             alt="close menu"
             id="close-icon"
-            className={props.menuOpen ? '' : 'hidden'}
             onClick={() => {
-              props.handleMenu(false)
+              document.body.classList.remove('menu-expanded')
             }}
           />
         </div>

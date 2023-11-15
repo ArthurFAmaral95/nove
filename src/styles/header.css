@@ -1,5 +1,9 @@
 #header {
   background-color: var(--light-green);
+
+  position: fixed;
+  top: 0;
+  width: 100vw;
 }
 
 #header .content {
@@ -27,9 +31,20 @@
   cursor: pointer;
 }
 
-#menu-icon.hidden,
-#close-icon.hidden {
+#menu-icon {
+  display: initial;
+}
+
+#close-icon {
   display: none;
+}
+
+body.menu-expanded #menu-icon {
+  display: none;
+}
+
+body.menu-expanded #close-icon {
+  display: initial;
 }
 
 @media (min-width: 871px) {
