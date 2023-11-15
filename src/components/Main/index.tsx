@@ -2,6 +2,7 @@ import '../../styles/main.css'
 
 import { Service } from '../../types/types'
 import { ServiceBox } from '../ServiceBox'
+import { WhappBtn } from '../WhappBtn'
 
 export function Main() {
   const services: Service[] = [
@@ -87,9 +88,7 @@ export function Main() {
               tratamentos odontológicos, exames digitais e planejamentos gerais.
             </p>
             <div className="contact">
-              <a href="https://wa.me/+553186613230" target="_blank">
-                <img src="./whatsapp.svg" alt="WhatsApp" /> Agende sua consulta
-              </a>
+              <WhappBtn text="Agende sua consulta" />
             </div>
           </header>
           <img src="./mulherSorrindo.png" alt="Mulher sorrindo" />
@@ -132,9 +131,7 @@ export function Main() {
             </p>
           </header>
           <div className="contact">
-            <a href="https://wa.me/+553186613230" target="_blank">
-              <img src="./whatsapp.svg" alt="WhatsApp" /> Chamar no WhatsApp
-            </a>
+            <WhappBtn text="Chamar no WhatsApp" />
             <a href="mailto:nove.veneza@gmail.com">
               <img src="./mail.svg" alt="Mail" /> Enviar e-mail
             </a>

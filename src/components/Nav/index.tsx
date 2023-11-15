@@ -1,5 +1,6 @@
 import '../../styles/nav.css'
 import { NavItem } from '../NavItem'
+import { WhappBtn } from '../WhappBtn'
 
 export function Nav() {
   return (
@@ -10,9 +11,7 @@ export function Nav() {
         <NavItem href="#location-contact" text="Localização e Contato" />
       </ul>
       <div className="contact">
-        <a href="https://wa.me/+553186613230" target="_blank">
-          <img src="./whatsapp.svg" alt="WhatsApp" /> Agende sua consulta
-        </a>
+        <WhappBtn text="Agende sua consulta" />
       </div>
     </nav>
   )

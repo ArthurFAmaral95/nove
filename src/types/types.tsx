@@ -8,3 +8,7 @@ export type NavItemProps = {
   href: string
   text: string
 }
+
+export type WhappBtnProps = {
+  text: string
+}
