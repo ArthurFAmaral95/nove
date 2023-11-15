@@ -1,33 +1,13 @@
 import '../../styles/nav.css'
+import { NavItem } from '../NavItem'
 
 export function Nav() {
   return (
     <nav>
       <ul>
-        <li
-          onClick={() => {
-            document.body.classList.remove('menu-expanded')
-          }}
-        >
-          <a href="#home">Início</a>
-          <span></span>
-        </li>
-        <li
-          onClick={() => {
-            document.body.classList.remove('menu-expanded')
-          }}
-        >
-          <a href="#services">Serviços</a>
-          <span></span>
-        </li>
-        <li
-          onClick={() => {
-            document.body.classList.remove('menu-expanded')
-          }}
-        >
-          <a href="#location-contact">Localização e Contato</a>
-          <span></span>
-        </li>
+        <NavItem href="#home" text="Início" />
+        <NavItem href="#services" text="Serviços" />
+        <NavItem href="#location-contact" text="Localização e Contato" />
       </ul>
       <div className="contact">
         <a href="https://wa.me/+553186613230" target="_blank">
