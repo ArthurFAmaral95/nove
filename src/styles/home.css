@@ -12,6 +12,7 @@
   --dark-green: #335424;
   --title-color: #8ab675;
   --text-color: #6b6b6b;
+  --stats-bg: hsl(39, 100%, 97%);
 }
 
 html {
@@ -25,8 +26,9 @@ body {
 }
 
 .content {
-  width: 100%;
-  max-width: 87rem;
+  width: min(50rem, 100%);
+  /* width: 100%;
+  max-width: 87rem; */
   margin-inline: auto;
 }
 
@@ -37,6 +39,6 @@ body {
 
 @media (min-width: 871px) {
   .content {
-    max-width: 144rem;
+    width: min(144rem, 100%);
   }
 }

@@ -1,10 +1,17 @@
 import '../../styles/serviceBox.css'
 
-import { Service } from '../../types/types'
+import { Service, SelectService } from '../../types/types'
 
-export function ServiceBox(props: Service) {
+type ServiceBoxProps = Service & SelectService
+
+export function ServiceBox(props: ServiceBoxProps) {
   return (
-    <li className="service">
+    <li
+      className="service"
+      onClick={() => {
+        props.selectService(props.service)
+      }}
+    >
       <div className="service-icon">
         <img src={props.img_path} alt="service icon" />
       </div>
